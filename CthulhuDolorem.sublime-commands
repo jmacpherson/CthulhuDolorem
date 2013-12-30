@@ -1,0 +1,26 @@
+[
+
+  {
+    "caption": "CthulhuDolorem: (5) a tentacle",
+    "command": "cthulhu_dolorem",
+    "args": {"qty": 5 }
+  },
+
+  {
+    "caption": "CthulhuDolorem: (15) a tooth",
+    "command": "cthulhu_dolorem",
+    "args": {"qty": 15 }
+  },
+
+  {
+    "caption": "CthulhuDolorem: (30) one whole mess of terror",
+    "command": "cthulhu_dolorem",
+    "args": {"qty": 30 }
+  },
+
+  {
+    "caption": "CthulhuDolorem: (200) cthulhu",
+    "command": "cthulhu_dolorem",
+    "args": {"qty": 200 }
+  }
+]

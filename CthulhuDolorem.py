@@ -4,18 +4,18 @@ import random
 import re
 
 
-class LoremIpsumCommand(sublime_plugin.TextCommand):
+class CthulhuDoloremCommand(sublime_plugin.TextCommand):
 
     def run(self, edit, qty=10):
 
         selections = self.view.sel()
         for selection in selections:
 
-            # always start with Lorem ipsum for first outpur lorem
-            para = "Lorem ipsum "
+            # always start with Cthulhu dolorem for first outpur cthulhu
+            para = "Cthulhu dolorem "
 
-            # words from the original Lorum ipsum text
-            words = "dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum".split()
+            # words from the original Cthulhu dolorem chant + gibberish
+            words = "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn nargl'wtag fnarh ztobkt wuq'il n'fgikt pwe gahndol ikt ir puhg wihgn chthil r'loy bikt hmirsch".split()
 
             lastchars = self.view.substr(sublime.Region(selection.begin()-20, selection.end()))
             last = re.search("(|(\d+)(\.\d+)*)$", lastchars).group(0)
